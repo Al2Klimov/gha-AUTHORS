@@ -1,0 +1,8 @@
+# AUTHORS file validator | (c) 2024 Icinga GmbH | MIT
+
+name: AUTHORS file validator
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: ${{ github.action_path }}/action.bash
